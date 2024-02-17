@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo List</title>
+  </head>
+  <body>
+  
+  <div class="todo-container">
+      <div class="todo-header">You've completed <span>1</span> of <span>3</span> TODOs</div>
+      <div class="todo-search">
+          <input type="text" placeholder="Search...">
+      </div>
+      <div class="todo-list" id="todoList">
+        <div class="todo-item">
+            <div class="todo-item-text">
+              <input type="checkbox" id="todo1">
+              <label for="todo3">Task 1</label>
+            </div>
+            <button class="delete-button"><img src="./img/wrong-delete-remove.svg" alt="Delete"></button>
+        </div>
+        <div class="todo-item">
+          <div class="todo-item-text">
+            <input type="checkbox" id="todo2">
+            <label for="todo3">Task 2</label>
+          </div>
+          <button class="delete-button"><img src="./img/wrong-delete-remove.svg" alt="Delete"></button>
+        </div>
+        <div class="todo-item">
+          <div class="todo-item-text">
+            <input type="checkbox" id="todo3">
+            <label for="todo3">Task 3</label>
+          </div>
+          <button class="delete-button"><img src="./img/wrong-delete-remove.svg" alt="Delete"></button>
+        </div>
+      </div>
+  </div>
+
+  <div class="todo-add-task" id="addTaskWindow">
+    <div class="todo-add-task-text"> Write your new TODO</div>
+    <input type="text" class="new-task-input" placeholder="New Task">
+    <div class="todo-add-task-buttons">
+      <button class="cancel-button" id="cancelAddTaskButton">Cancel</button>
+      <button class="add-button" id="addTaskButton">Add</button>
+    </div>
+  </div>
+
+  <button class="todo-button" id="showAddTaskButton">Add Task</button>
+  <script src="index.js"></script>
+  </body>
+  </html>
+  

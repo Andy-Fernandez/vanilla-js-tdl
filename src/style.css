@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBEFEE;
+}
+
+span {
+    font-weight: 700;
+}
+
+.todo-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #EBEFEE;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.todo-header {
+    margin-bottom: 20px;
+}
+
+.todo-search {
+    width: 80%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.todo-search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.todo-item {
+    background-color: #F5F7F5;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delete-button {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    top: -18px;
+}
+
+.delete-button img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.todo-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #37B2CC;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* New todo task */
+
+#addTaskWindow {
+    display: none;
+}
+
+.todo-add-task {
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.todo-add-task-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.new-task-input {
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-add-task-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button,
+.add-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.add-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
